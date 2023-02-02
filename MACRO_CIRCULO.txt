@@ -1,0 +1,304 @@
+CIRCULO MACRO RADIO, SEL
+        
+        MOV DX, RADIO
+        MOV AX, RADIO
+        ADD RADIO, AX
+        MOV DX, RADIO
+        MOV CX, RADIO
+        
+        MOV AH,12           
+        MOV AL,14
+        INT 10H 
+P1:     
+        ;DX=Y CX=X
+        MOV DX, RADIO
+        MOV AX, RADIO
+        ADD AX, RADIO  
+        MOV BX, AX
+        MOV CX, BX
+;--------------
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC DX
+        ;-------------     
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC DX   
+        ;-------  
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC DX   
+        ;-------      
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H   
+        ;-------  
+        INC DX
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H   
+        ;-------    
+        INC DX
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H 
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        ;------  
+        DEC DX
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        ;DX=Y CX=X     
+        DEC CX
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        ;------   
+        DEC CX
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H  
+        ;-------           
+        DEC CX 
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H   
+        ;-------    
+        DEC CX
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        ;-------------         
+        INC CX 
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        ;--------- 
+        INC CX
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H  
+        ;-------    
+        INC CX
+        DEC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H                               
+        ;-----------        
+        DEC DX
+        INC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        ;DX=Y CX=X     
+        DEC DX
+        INC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H 
+        INC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H 
+        ;----------    
+        INC DX
+        INC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        ;DX=Y CX=X     
+        INC CX
+        INC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC CX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H                               
+        ;-----------     
+        INC CX
+        INC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H  
+        ;-------     
+        INC CX 
+        INC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        ;---------   
+        INC CX
+        INC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H
+        INC DX
+        MOV AH,12           
+        MOV AL,14
+        INT 10H 
+        JMP PREGUNTA
+ENDM
